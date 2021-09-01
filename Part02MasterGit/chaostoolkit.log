@@ -1,0 +1,153 @@
+[36m[2021-09-01 16:56:00 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-01 16:56:00 DEBUG] [cli:104][39m Running command 'discover'
+[36m[2021-09-01 16:56:00 DEBUG] [cli:108][39m Using settings file '/home/lexar/.chaostoolkit/settings.yaml'
+[36m[2021-09-01 16:56:00 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at '/home/lexar/.chaostoolkit/settings.yaml'.
+[32m[2021-09-01 16:56:00 INFO] [package:22][39m Attempting to download and install package 'chaostoolkit-kubernetes'
+[36m[2021-09-01 16:56:05 DEBUG] [package:31][39m Collecting chaostoolkit-kubernetes
+      Downloading chaostoolkit_kubernetes-0.25.1-py3-none-any.whl (32 kB)
+    Requirement already satisfied: logzero in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from chaostoolkit-kubernetes) (1.7.0)
+    Requirement already satisfied: chaostoolkit-lib>=0.20.0 in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from chaostoolkit-kubernetes) (1.21.0)
+    Collecting kubernetes
+      Downloading kubernetes-18.20.0-py2.py3-none-any.whl (1.6 MB)
+    Requirement already satisfied: pyyaml in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from chaostoolkit-kubernetes) (5.4.1)
+    Collecting dateparser
+      Downloading dateparser-1.0.0-py2.py3-none-any.whl (279 kB)
+    Requirement already satisfied: requests~=2.21 in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from chaostoolkit-lib>=0.20.0->chaostoolkit-kubernetes) (2.26.0)
+    Requirement already satisfied: idna<4,>=2.5 in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from requests~=2.21->chaostoolkit-lib>=0.20.0->chaostoolkit-kubernetes) (3.2)
+    Requirement already satisfied: charset-normalizer~=2.0.0 in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from requests~=2.21->chaostoolkit-lib>=0.20.0->chaostoolkit-kubernetes) (2.0.4)
+    Requirement already satisfied: certifi>=2017.4.17 in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from requests~=2.21->chaostoolkit-lib>=0.20.0->chaostoolkit-kubernetes) (2021.5.30)
+    Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from requests~=2.21->chaostoolkit-lib>=0.20.0->chaostoolkit-kubernetes) (1.26.6)
+    Collecting pytz
+      Downloading pytz-2021.1-py2.py3-none-any.whl (510 kB)
+    Collecting python-dateutil
+      Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+    Collecting tzlocal
+      Downloading tzlocal-3.0-py3-none-any.whl (16 kB)
+    Collecting regex!=2019.02.19
+      Downloading regex-2021.8.28-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (759 kB)
+    Collecting google-auth>=1.0.1
+      Downloading google_auth-2.0.2-py2.py3-none-any.whl (152 kB)
+    Collecting six>=1.9.0
+      Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+    Collecting requests-oauthlib
+      Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+    Requirement already satisfied: setuptools>=21.0.0 in /home/lexar/.venvs/chaostk/lib/python3.9/site-packages (from kubernetes->chaostoolkit-kubernetes) (44.1.1)
+    Collecting websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0
+      Downloading websocket_client-1.2.1-py2.py3-none-any.whl (52 kB)
+    Collecting pyasn1-modules>=0.2.1
+      Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+    Collecting rsa<5,>=3.1.4
+      Downloading rsa-4.7.2-py3-none-any.whl (34 kB)
+    Collecting cachetools<5.0,>=2.0.0
+      Downloading cachetools-4.2.2-py3-none-any.whl (11 kB)
+    Collecting pyasn1<0.5.0,>=0.4.6
+      Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+    Collecting oauthlib>=3.0.0
+      Downloading oauthlib-3.1.1-py2.py3-none-any.whl (146 kB)
+    Installing collected packages: pyasn1, six, rsa, pyasn1-modules, oauthlib, cachetools, websocket-client, tzlocal, requests-oauthlib, regex, pytz, python-dateutil, google-auth, kubernetes, dateparser, chaostoolkit-kubernetes
+    Successfully installed cachetools-4.2.2 chaostoolkit-kubernetes-0.25.1 dateparser-1.0.0 google-auth-2.0.2 kubernetes-18.20.0 oauthlib-3.1.1 pyasn1-0.4.8 pyasn1-modules-0.2.8 python-dateutil-2.8.2 pytz-2021.1 regex-2021.8.28 requests-oauthlib-1.3.0 rsa-4.7.2 six-1.16.0 tzlocal-3.0 websocket-client-1.2.1
+    
+[32m[2021-09-01 16:56:05 INFO] [package:40][39m Package downloaded and installed in current environment
+[32m[2021-09-01 16:56:05 INFO] [__init__:117][39m Discovering capabilities from chaostoolkit-kubernetes
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.actions
+[32m[2021-09-01 16:56:05 INFO] [discover:81][39m Searching for probes in chaosk8s.probes
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m 'typing.Tuple[typing.Dict[str, typing.Any], typing.Dict[str, typing.Any]]' could not be ported to something meaningful
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m 'typing.Optional[bool]' could not be ported to something meaningful
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m 'typing.Optional[str]' could not be ported to something meaningful
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.deployment.actions
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.deployment.probes
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m 'typing.Optional[bool]' could not be ported to something meaningful
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m 'typing.Optional[bool]' could not be ported to something meaningful
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m 'typing.Optional[bool]' could not be ported to something meaningful
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.node.actions
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m '<class 'kubernetes.client.models.v1_node.V1Node'>' could not be ported to something meaningful
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.node.probes
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.pod.actions
+[32m[2021-09-01 16:56:05 INFO] [discover:81][39m Searching for probes in chaosk8s.pod.probes
+[36m[2021-09-01 16:56:05 DEBUG] [discover:181][39m 'typing.Optional[str]' could not be ported to something meaningful
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.replicaset.actions
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.service.actions
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.service.probes
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.statefulset.actions
+[32m[2021-09-01 16:56:05 INFO] [discover:81][39m Searching for probes in chaosk8s.statefulset.probes
+[32m[2021-09-01 16:56:05 INFO] [discover:73][39m Searching for actions in chaosk8s.crd.actions
+[32m[2021-09-01 16:56:05 INFO] [discover:81][39m Searching for probes in chaosk8s.crd.probes
+[32m[2021-09-01 16:56:05 INFO] [cli:542][39m Discovery outcome saved in ./discovery.json
+[36m[2021-09-01 16:56:17 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-01 16:56:17 DEBUG] [cli:104][39m Running command 'init'
+[36m[2021-09-01 16:56:17 DEBUG] [cli:108][39m Using settings file '/home/lexar/.chaostoolkit/settings.yaml'
+[36m[2021-09-01 16:56:17 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at '/home/lexar/.chaostoolkit/settings.yaml'.
+[36m[2021-09-01 16:57:05 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-01 16:57:05 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-09-01 16:57:05 DEBUG] [cli:108][39m Using settings file '/home/lexar/.chaostoolkit/settings.yaml'
+[36m[2021-09-01 16:57:05 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at '/home/lexar/.chaostoolkit/settings.yaml'.
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-01 16:57:05 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-09-01 16:57:05 DEBUG] [caching:35][39m Cached 0 activities
+[32m[2021-09-01 16:57:05 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-09-01 16:57:05 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-09-01 16:57:05 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-09-01 16:57:05 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-09-01 16:57:05 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-09-01 16:57:05 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-09-01 16:57:05 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-09-01 16:57:05 DEBUG] [caching:35][39m Cached 0 activities
+[36m[2021-09-01 16:57:05 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-09-01 16:57:05 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-09-01 16:57:05 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-09-01 16:57:05 INFO] [run:321][39m Running experiment: Minikube test
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-09-01 16:57:05 INFO] [run:340][39m Steady-state strategy: default
+[32m[2021-09-01 16:57:05 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2021-09-01 16:57:05 INFO] [run:348][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2021-09-01 16:57:05 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2021-09-01 16:57:05 INFO] [activity:113][39m No declared activities, let's move on.
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2021-09-01 16:57:05 INFO] [run:807][39m Let's rollback...
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-09-01 16:57:05 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-09-01 16:57:05 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-09-01 16:57:05 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-09-01 16:57:05 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-09-01 16:57:23 DEBUG] [cli:103][39m ###############################################################################
+[36m[2021-09-01 16:57:23 DEBUG] [cli:104][39m Running command 'run'
+[36m[2021-09-01 16:57:23 DEBUG] [cli:108][39m Using settings file '/home/lexar/.chaostoolkit/settings.yaml'
+[36m[2021-09-01 16:57:23 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at '/home/lexar/.chaostoolkit/settings.yaml'.
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-09-01 16:57:23 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-09-01 16:57:23 DEBUG] [caching:35][39m Cached 0 activities
+[32m[2021-09-01 16:57:23 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-09-01 16:57:23 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-09-01 16:57:23 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-09-01 16:57:23 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-09-01 16:57:23 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-09-01 16:57:23 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-09-01 16:57:23 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-09-01 16:57:23 DEBUG] [caching:35][39m Cached 0 activities
+[36m[2021-09-01 16:57:23 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-09-01 16:57:23 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-09-01 16:57:23 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-09-01 16:57:23 INFO] [run:321][39m Running experiment: Minikube test
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-09-01 16:57:23 INFO] [run:340][39m Steady-state strategy: continuous
+[32m[2021-09-01 16:57:23 INFO] [run:343][39m Rollbacks strategy: default
+[32m[2021-09-01 16:57:23 INFO] [run:348][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[32m[2021-09-01 16:57:23 INFO] [run:551][39m Playing your experiment's method now...
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2021-09-01 16:57:23 INFO] [activity:113][39m No declared activities, let's move on.
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[32m[2021-09-01 16:57:23 INFO] [run:807][39m Let's rollback...
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-09-01 16:57:23 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-09-01 16:57:23 INFO] [run:419][39m Experiment ended with status: completed
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-09-01 16:57:23 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-09-01 16:57:23 DEBUG] [caching:42][39m Clearing activities cache

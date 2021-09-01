@@ -1,0 +1,24 @@
+{
+  "chaoslib-version": "1.21.0",
+  "platform": "Linux-5.14.0-generic-x86_64-with-glibc2.33",
+  "node": "EVOOLAPTOP",
+  "experiment": {
+    "title": "Minikube test",
+    "description": "N/A",
+    "tags": [],
+    "method": [],
+    "dry": false
+  },
+  "start": "2021-09-01T23:57:23.857870",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": null,
+    "after": null,
+    "during": []
+  },
+  "run": [],
+  "rollbacks": [],
+  "end": "2021-09-01T23:57:23.858557",
+  "duration": 0.0024178028106689453
+}
